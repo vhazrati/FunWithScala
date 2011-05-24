@@ -4,7 +4,8 @@ object Traitors {
   
   def main(args: Array[String]) {
     println("Creating the concrete class")
-    new ConcreteClass
+//    new ConcreteClass
+    new AnotherClass
     println("After Creating the concrete class")
   }
   
@@ -27,6 +28,11 @@ object Traitors {
     val c = "ConcreteClass"
     def hello = print("hello")
     println("  in ConcreteClass = " + c)
+  }
+  
+  class AnotherClass extends TraitOne with TraitTwo{
+    val a = "anotherConcrete"
+      println("  in ConcreteClass = " + a)
   }
 
 }

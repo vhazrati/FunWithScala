@@ -5,7 +5,7 @@ object ProvisioningService {
   def main(args: Array[String]) {
 
     val tablet = new Tablet
-    tablet.setUp(10.0)
+    tablet.setPrice(10.0)
 
     val phone = new Phone
     phone.setPrice(18.0)
